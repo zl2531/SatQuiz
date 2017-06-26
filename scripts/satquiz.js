@@ -60,8 +60,9 @@ var opt5 = document.getElementById('opt5');
 var nextButton = document.getElementById('button');
 var result = document.getElementById('result');
 
-function loadQuestion (questionIndex) {
-  var q = questions(questionIndex);
+function loadQuestion () {
+  var questionIndex = 0;
+  var q = questions[questionIndex];
   questionEl.innerText = (questionIndex + 1) + '. ' + q.question;
   opt1.innerText = q.option1;
   opt2.innerText = q.option2;
@@ -82,9 +83,7 @@ function loadNextQuestion () {
   }
   selectedOption.checked = false;
   currentQuestion++;
-  if (currentQuestion == totalQuestions - 1) {
-    nextButton.innerText = 'Completed';
-  }
+
   if (currentQuestion == totalQuestions) {
     container.style.display = 'none';
     result.style.display = '';
@@ -94,4 +93,4 @@ function loadNextQuestion () {
 loadQuestion(currentQuestion);
 }
 
-loadQuestion(currentQuestion);
+loadQuestion();

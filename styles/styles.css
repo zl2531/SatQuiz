@@ -1,6 +1,6 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
-  background:#6cf;
+  background: powderblue;
 }
 
 .container {
@@ -10,7 +10,7 @@ body {
   left: 50%;
   background: rgba(255, 255, 255, 0.5);
   padding: 20px;
-  border: 1px solid #08038C;
+  border: 1px solid black;
 }
 
 .title {
@@ -24,14 +24,15 @@ body {
 .question {
   padding: 20px;
   font-size: 22px;
-  background: #08038C;
+  background: powderblue;
   border-radius: 20px;
   margin: 10px 0 10px 0;
   color: #f6f6f6;
 }
 
 .option {
-  width: 470px;
+  width: 670px;
+  height: 30px;
   display: inline-block;
   padding: 10px, 0, 10px, 15px;
   vertical-align: middle;
@@ -42,8 +43,8 @@ body {
 }
 
 .next-btn {
-  background: rgba(255, 25, 255, 0.5);
-  width: 200px;
+  background: powderblue;
+  width: 150px;
   height: 35px;
   border-radius: 20px;
   margin: 10px;
